@@ -6,6 +6,7 @@ return require'packer'.startup(function()
   use 'romgrk/barbar.nvim'
   use 'windwp/nvim-autopairs'
   use 'akinsho/toggleterm.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
