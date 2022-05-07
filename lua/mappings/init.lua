@@ -5,6 +5,11 @@ vim.g.mapleader = ' '
 
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
+vim.g.copilot_no_tab_map = true
+map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+map('n', '<C-d>', ':Copilot disable<CR>', opts)
+map('n', '<C-e>', ':Copilot enable<CR>', opts)
+
 map('n', '<A-,>', ':BufferPrevious<CR>', opts)
 map('n', '<A-.>', ':BufferNext<CR>', opts)
 -- Re-order to previous/next

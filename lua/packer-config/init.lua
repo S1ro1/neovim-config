@@ -7,6 +7,7 @@ return require'packer'.startup(function()
   use 'windwp/nvim-autopairs'
   use 'akinsho/toggleterm.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
+  use 'github/copilot.vim'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
