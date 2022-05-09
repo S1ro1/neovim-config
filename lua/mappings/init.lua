@@ -1,9 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = ' '
+vim.g.mapleader = 'Space'
 
-map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+map('n', '<A-e>', ':NvimTreeToggle<CR>', opts)
 
 vim.g.copilot_no_tab_map = true
 map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
@@ -28,16 +28,13 @@ map('n', '<A-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<A-0>', ':BufferLast<CR>', opts)
 -- Close buffer
 map('n', '<A-c>', ':BufferClose<CR>', opts)
--- Wipeout buffer
---                 :BufferWipeout<CR>
--- Close commands
---                 :BufferCloseAllButCurrent<CR>
---                 :BufferCloseBuffersLeft<CR>
---                 :BufferCloseBuffersRight<CR>
--- Magic buffer-picking mode
 map('n', '<C-p>', ':BufferPick<CR>', opts)
 -- Sort automatically by...
 map('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', opts)
 map('n', '<Space>bd', ':BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
+
+map('v', '<', "<gv", opts)
+map('v', '>', '>gv', opts)
+map('n', '<A-f>', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 

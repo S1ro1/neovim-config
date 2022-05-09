@@ -22,3 +22,7 @@ set.number = true
 set.cursorline = true
 
 set.hidden = true
+set.mouse = "a"
+
+set.title = true
+set.clipboard = "unnamedplus"

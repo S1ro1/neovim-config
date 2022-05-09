@@ -8,6 +8,9 @@ return require'packer'.startup(function()
   use 'akinsho/toggleterm.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
   use 'github/copilot.vim'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'nvim-treesitter/nvim-treesitter-refactor'
+  use 'terrortylor/nvim-comment'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'

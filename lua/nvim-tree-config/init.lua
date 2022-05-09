@@ -6,6 +6,12 @@ require'nvim-tree'.setup {
     width = 22,
     hide_root_folder = true,
     side = 'left', 
+    mappings = {
+      custom_only = false,
+      list = {
+        { key = '<A-z>', action = "vsplit"},
+      },
+    },
   },
   disable_netrw = true,
   hijack_netrw = true,
