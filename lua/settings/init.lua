@@ -16,10 +16,13 @@ set.wrap = false
 set.scrolloff = 5
 set.fileencoding = 'utf-8'
 set.termguicolors = true
+set.completeopt = "menuone,noselect"
+set.wildmenu = true
 
 set.relativenumber = true
 set.number = true
 set.cursorline = true
+set.signcolumn = 'yes'
 
 set.hidden = true
 set.mouse = "a"

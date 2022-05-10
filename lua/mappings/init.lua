@@ -1,7 +1,7 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-vim.g.mapleader = 'Space'
+vim.g.mapleader = " "
 
 map('n', '<A-e>', ':NvimTreeToggle<CR>', opts)
 
@@ -37,4 +37,6 @@ map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
 map('v', '<', "<gv", opts)
 map('v', '>', '>gv', opts)
 map('n', '<A-f>', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
+
+map("n", "<leader>m", ":TZAtaraxis<CR>", opts)
 
