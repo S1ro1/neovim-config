@@ -31,4 +31,4 @@ set.title = true
 set.clipboard = "unnamedplus"
 
 set.pumheight = 3
-vim.g.completion_menu_length = 15
+vim.g.completion_menu_length = 5

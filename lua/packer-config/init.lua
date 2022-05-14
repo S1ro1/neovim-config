@@ -19,5 +19,4 @@ return require'packer'.startup(function()
   use 'L3MON4D3/LuaSnip'
   use 'nvim-lualine/lualine.nvim'
   use 'Pocco81/TrueZen.nvim'
-  use 'marioortizmanero/adoc-pdf-live.nvim'
 end)

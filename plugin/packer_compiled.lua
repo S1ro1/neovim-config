@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/TrueZen.nvim",
     url = "https://github.com/Pocco81/TrueZen.nvim"
   },
-  ["adoc-pdf-live.nvim"] = {
-    loaded = true,
-    path = "/home/siro/.local/share/nvim/site/pack/packer/start/adoc-pdf-live.nvim",
-    url = "https://github.com/marioortizmanero/adoc-pdf-live.nvim"
-  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/barbar.nvim",
