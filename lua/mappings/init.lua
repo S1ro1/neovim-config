@@ -39,4 +39,3 @@ map('v', '>', '>gv', opts)
 map('n', '<A-f>', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
 map("n", "<leader>m", ":TZAtaraxis<CR>", opts)
-

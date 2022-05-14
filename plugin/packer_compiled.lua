@@ -163,6 +163,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-code-dark"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/vim-code-dark",
+    url = "https://github.com/tomasiser/vim-code-dark"
+  },
+  ["vscode.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/vscode.nvim",
+    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 

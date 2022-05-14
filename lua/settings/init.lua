@@ -26,9 +26,12 @@ set.signcolumn = 'yes'
 
 set.hidden = true
 set.mouse = "a"
+set.scrolloff = 3
 
 set.title = true
 set.clipboard = "unnamedplus"
 
 set.pumheight = 3
 vim.g.completion_menu_length = 5
+
+

@@ -1,6 +1,10 @@
 return require'packer'.startup(function()
   use 'wbthomason/packer.nvim'
+
   use 'EdenEast/nightfox.nvim'
+  use 'tomasiser/vim-code-dark'
+  use 'Mofiqul/vscode.nvim'
+
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'romgrk/barbar.nvim'
@@ -20,3 +24,4 @@ return require'packer'.startup(function()
   use 'nvim-lualine/lualine.nvim'
   use 'Pocco81/TrueZen.nvim'
 end)
+
