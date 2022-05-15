@@ -12,9 +12,11 @@ map('n', '<C-e>', ':Copilot enable<CR>', opts)
 
 map('n', '<A-,>', ':BufferPrevious<CR>', opts)
 map('n', '<A-.>', ':BufferNext<CR>', opts)
+
 -- Re-order to previous/next
 map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
 map('n', '<A->>', ' :BufferMoveNext<CR>', opts)
+
 -- Goto buffer in position...
 map('n', '<A-1>', ':BufferGoto 1<CR>', opts)
 map('n', '<A-2>', ':BufferGoto 2<CR>', opts)
@@ -26,16 +28,21 @@ map('n', '<A-7>', ':BufferGoto 7<CR>', opts)
 map('n', '<A-8>', ':BufferGoto 8<CR>', opts)
 map('n', '<A-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<A-0>', ':BufferLast<CR>', opts)
+
 -- Close buffer
 map('n', '<A-c>', ':BufferClose<CR>', opts)
 map('n', '<C-p>', ':BufferPick<CR>', opts)
--- Sort automatically by...
-map('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', opts)
-map('n', '<Space>bd', ':BufferOrderByDirectory<CR>', opts)
-map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
 
 map('v', '<', "<gv", opts)
 map('v', '>', '>gv', opts)
 map('n', '<A-f>', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
 map("n", "<leader>m", ":TZAtaraxis<CR>", opts)
+
+map('n', '<C-Up>', ':resize -2<CR>', opts)
+map('n', '<C-Down>', ':resize +2<CR>', opts)
+map('n', '<C-Left>', ':vertical resize -2<CR>', opts)
+map('n', '<C-Right>', ':vertical resize +2<CR>', opts)
+
+map('n', '<C-h>', '<C-w>h', opts)
+map('n', '<C-l>', '<C-w>l', opts)
