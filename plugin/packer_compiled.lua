@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -123,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -158,6 +168,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["rasmus.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/rasmus.nvim",
+    url = "https://github.com/kvrohit/rasmus.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,

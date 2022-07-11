@@ -4,6 +4,8 @@ return require'packer'.startup(function()
   use 'EdenEast/nightfox.nvim'
   use 'tomasiser/vim-code-dark'
   use 'Mofiqul/vscode.nvim'
+  use 'luisiacc/gruvbox-baby'
+  use 'kvrohit/rasmus.nvim'
 
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
@@ -15,6 +17,7 @@ return require'packer'.startup(function()
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
   use 'nvim-treesitter/nvim-treesitter-refactor'
   use 'terrortylor/nvim-comment'
+  use 'norcalli/nvim-colorizer.lua'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
