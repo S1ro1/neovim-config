@@ -27,7 +27,7 @@ require'nvim-treesitter.configs'.setup {
       },
     },
   },
-  indent = { enable = true, disable = { "yaml", "python" } },
+  indent = { enable = true, disable = { "yaml" } },
   autotag = { enable = false },
   textobjects = {
     swap = {

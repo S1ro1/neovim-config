@@ -8,9 +8,6 @@ require'nvim-tree'.setup {
     side = 'left', 
     mappings = {
       custom_only = false,
-      list = {
-        { key = '<A-z>', action = "vsplit"},
-      },
     },
   },
   disable_netrw = true,
@@ -22,4 +19,5 @@ require'nvim-tree'.setup {
   },
 }
 
+-- some old magic
 vim.api.nvim_exec([[ autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif ]], false)

@@ -1,12 +1,14 @@
 return require'packer'.startup(function()
   use 'wbthomason/packer.nvim'
 
+  -- colorschemes i rotate between
   use 'EdenEast/nightfox.nvim'
   use 'tomasiser/vim-code-dark'
   use 'Mofiqul/vscode.nvim'
   use 'luisiacc/gruvbox-baby'
   use 'kvrohit/rasmus.nvim'
   use 'mangeshrex/everblush.vim'
+  -- end of colorschemes
 
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'

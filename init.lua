@@ -1,6 +1,5 @@
 require('packer-config')
-require('colorschemes-config.gruv')
-
+require('colorschemes-config.gruv') -- to change colorscheme, just change suffix to any other folder in colorschemes-config
 require('key-maps')
 require('settings')
 require('nvim-tree-config')

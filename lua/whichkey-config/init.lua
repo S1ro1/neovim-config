@@ -1,4 +1,6 @@
 local wk = require('which-key')
+
+-- telescope keybinds
 wk.register({
   f = {
     name = "telescope",

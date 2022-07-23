@@ -1,3 +1,4 @@
+-- autocompletion setup
 -- luasnip setup
 local luasnip = require 'luasnip'
 
@@ -13,7 +14,7 @@ cmp.setup {
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
-    ['<Tab>'] = cmp.mapping.confirm {
+    ['<Tab>'] = cmp.mapping.confirm { -- accept suggestion
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     },

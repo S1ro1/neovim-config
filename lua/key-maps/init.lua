@@ -3,21 +3,23 @@ local opts = { noremap = true, silent = true }
 
 vim.g.mapleader = " "
 
+-- toggle neovim tree side panel
 map('n', '<A-e>', ':NvimTreeToggle<CR>', opts)
 
-vim.g.copilot_no_tab_map = true
+-- copilot related keybinds
 map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
 map('n', '<C-d>', ':Copilot disable<CR>', opts)
 map('n', '<C-e>', ':Copilot enable<CR>', opts)
 
+-- move to buffer
 map('n', '<leader>,', ':BufferPrevious<CR>', opts)
 map('n', '<leader>.', ':BufferNext<CR>', opts)
 
--- Re-order to previous/next
-map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
-map('n', '<A->>', ' :BufferMoveNext<CR>', opts)
+-- reorder buffers
+map('n', '<leader-<>', ':BufferMovePrevious<CR>', opts)
+map('n', '<leader->>', ' :BufferMoveNext<CR>', opts)
 
--- Goto buffer in position...
+-- move to buffer n
 map('n', '<leader>1', ':BufferGoto 1<CR>', opts)
 map('n', '<leader>2', ':BufferGoto 2<CR>', opts)
 map('n', '<leader>3', ':BufferGoto 3<CR>', opts)
@@ -29,24 +31,33 @@ map('n', '<leader>8', ':BufferGoto 8<CR>', opts)
 map('n', '<leader>9', ':BufferGoto 9<CR>', opts)
 map('n', '<leader>0', ':BufferLast<CR>', opts)
 
--- Close buffer
+-- close buffer
 map('n', '<leader>c', ':BufferClose<CR>', opts)
+
+-- pick buffer by its value
 map('n', '<leader>p', ':BufferPick<CR>', opts)
 
+-- better indenting of visual block
 map('v', '<', "<gv", opts)
 map('v', '>', '>gv', opts)
+
+-- format buffer
 map('n', '<leader>f', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
+-- zen mode?
 map("n", "<leader>m", ":TZAtaraxis<CR>", opts)
 
+-- resizing of splits
 map('n', '<C-Up>', ':resize -2<CR>', opts)
 map('n', '<C-Down>', ':resize +2<CR>', opts)
 map('n', '<C-Left>', ':vertical resize -2<CR>', opts)
 map('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
+-- changing focus of splits
 map('n', '<C-h>', '<C-w>h', opts)
 map('n', '<C-l>', '<C-w>l', opts)
 
+-- default ish telescope keybinds
 map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
