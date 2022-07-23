@@ -8,9 +8,9 @@ so sometimes each new push will change the colorscheme (how to change it is spec
 
 Currently used theme is gruvbox-baby https://github.com/luisiacc/gruvbox-baby
 
-![Gruvbox-baby](https://raw.githubusercontent.com/{S1ro1}/{neovim-config}/{master}/.github/images/{python_preview}.{png}) 
+![python_preview](https://user-images.githubusercontent.com/54212263/180611015-5f797098-44b9-4131-aa8d-2342f8d6fb93.png)
 &nbsp;&nbsp;&nbsp;
-![Filefinder](https://raw.githubusercontent.com/{S1ro1}/{neovim-config}/{master}/.github/images/{file_finder_preview}.{png})
+![file_finder_preview](https://user-images.githubusercontent.com/54212263/180611003-f8607116-4de0-4cd2-b07c-2bcad161b05a.png)
 
 ## Installation
 ```console
