@@ -8,9 +8,9 @@ so sometimes each new push will change the colorscheme (how to change it is spec
 
 Currently used theme is gruvbox-baby https://github.com/luisiacc/gruvbox-baby
 
-![Gruvbox-baby](images/python.png) 
+![Gruvbox-baby](https://raw.githubusercontent.com/{S1ro1}/{neovim-config}/{master}/.github/images/{python_preview}.{png}) 
 &nbsp;&nbsp;&nbsp;
-![Filefinder](images/file_finder.png)
+![Filefinder](https://raw.githubusercontent.com/{S1ro1}/{neovim-config}/{master}/.github/images/{file_finder_preview}.{png})
 
 ## Installation
 ```console
@@ -23,7 +23,7 @@ After that u can either:
 - rename newly created folder to nvim and use it as a default configuration <br>
 
 ```console
-mv nvim-config nvim
+mv neovim-config nvim
 ```
 
 After that it becomes your default neovim config
