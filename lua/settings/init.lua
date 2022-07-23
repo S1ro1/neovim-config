@@ -34,10 +34,9 @@ set.clipboard = "unnamedplus"
 set.pumheight = 3
 vim.g.completion_menu_length = 5
 
-vim.cmd[[highlight Normal           ctermbg=NONE guibg=NONE]]
-vim.cmd[[highlight LineNr           ctermbg=NONE guibg=NONE]]
-vim.cmd[[highlight SignColumn       ctermbg=NONE guibg=NONE]]
-vim.cmd[[highlight NvimTreeNormal   guibg=NONE]]
-vim.cmd[[highlight NvimTreeNormalNC guibg=NONE]]
-
+-- Vim.cmd[[highlight Normal           ctermbg=NONE guibg=NONE]]
+-- vim.cmd[[highlight LineNr           ctermbg=NONE guibg=NONE]]
+-- vim.cmd[[highlight SignColumn       ctermbg=NONE guibg=NONE]]
+-- vim.cmd[[highlight NvimTreeNormal   guibg=NONE]]
+-- vim.cmd[[highlight NvimTreeNormalNC guibg=NONE]]
 

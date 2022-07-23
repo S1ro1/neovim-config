@@ -32,6 +32,13 @@ for _, lsp in pairs(servers) do
     capabilities = capabilities,
     flags = {
       debounce_text_changes = 150,
+    },
+    settings = {
+      ["pyright"] = {
+        typeCheckingMode = 'off',
+        useLibraryCodeForTypes = true,
+      }
     }
   }
 end
+

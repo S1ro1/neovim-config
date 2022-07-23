@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["everblush.vim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/everblush.vim",
+    url = "https://github.com/mangeshrex/everblush.vim"
+  },
   ["gruvbox-baby"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
@@ -169,10 +174,25 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
   ["rasmus.nvim"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/rasmus.nvim",
     url = "https://github.com/kvrohit/rasmus.nvim"
+  },
+  ["tabout.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/tabout.nvim",
+    url = "https://github.com/abecodes/tabout.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,
@@ -188,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/vscode.nvim",
     url = "https://github.com/Mofiqul/vscode.nvim"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
