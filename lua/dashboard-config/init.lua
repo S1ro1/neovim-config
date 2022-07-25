@@ -1,6 +1,7 @@
 local db = require('dashboard')
 local home = os.getenv("HOME")
 local keymaps = home .. '/.config/nvim/lua/key-maps/init.lua'
+local utils = require('utils')
 
 db.session_directory = home .. '/.tmp/nvim'
 
@@ -25,7 +26,7 @@ db.custom_header = {
   [[                                                          ]]
 }
 
- db.custom_center = {
+db.custom_center = {
   {
     icon = ' ',
     desc = 'New file                                        ',
@@ -60,7 +61,7 @@ db.custom_header = {
     icon = ' ',
     desc = 'Keymaps                                         ',
     shortcut = '<leader>k',
-    action = 'e' .. keymaps,
+    action = 'lua utils.mount()'
   }
 }
 

@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -188,11 +193,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/rasmus.nvim",
     url = "https://github.com/kvrohit/rasmus.nvim"
-  },
-  ["tabout.nvim"] = {
-    loaded = true,
-    path = "/home/siro/.local/share/nvim/site/pack/packer/start/tabout.nvim",
-    url = "https://github.com/abecodes/tabout.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

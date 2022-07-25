@@ -2,6 +2,8 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 local keymaps = os.getenv("HOME") .. '/.config/nvim/lua/key-maps/init.lua'
 
+utils = require'utils'
+
 vim.g.mapleader = " "
 
 -- toggle neovim tree side panel
@@ -65,9 +67,16 @@ map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
 map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
 
+-- save and load session (currently saving is automated on close)
 map('n', '<leader>l', ':SessionLoad<CR>', opts)
 map('n', '<leader>s', ':SessionSave<CR>', opts)
 
+-- mimics tabout behavior
 map('i', '<A-a>', '<C-o>a', opts)
+
+-- open new file
 map('n', '<Leader>n', ':enew <CR>', opts)
-map('n', '<leader>k', ':e' .. keymaps .. '<CR>', opts)
+
+-- show keymaps
+map('n', '<leader>k', '<cmd>lua utils.show_keymaps()<CR>', opts)
+

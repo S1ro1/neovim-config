@@ -27,6 +27,7 @@ return require'packer'.startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'folke/which-key.nvim'
+  use 'MunifTanjim/nui.nvim'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
