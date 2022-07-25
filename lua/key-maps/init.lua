@@ -1,10 +1,12 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
+local keymaps = os.getenv("HOME") .. '/.config/nvim/lua/key-maps/init.lua'
 
 vim.g.mapleader = " "
 
 -- toggle neovim tree side panel
 map('n', '<A-e>', ':NvimTreeToggle<CR>', opts)
+map('n', '<leader>t', ':NvimTreeOpen<CR>', opts)
 
 -- copilot related keybinds
 map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
@@ -62,3 +64,10 @@ map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
 map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
+
+map('n', '<leader>l', ':SessionLoad<CR>', opts)
+map('n', '<leader>s', ':SessionSave<CR>', opts)
+
+map('i', '<A-a>', '<C-o>a', opts)
+map('n', '<Leader>n', ':enew <CR>', opts)
+map('n', '<leader>k', ':e' .. keymaps .. '<CR>', opts)

@@ -10,6 +10,7 @@ return require'packer'.startup(function()
   use 'mangeshrex/everblush.vim'
   -- end of colorschemes
 
+  use 'glepnir/dashboard-nvim'
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
   use 'romgrk/barbar.nvim'
@@ -26,10 +27,6 @@ return require'packer'.startup(function()
     requires = { {'nvim-lua/plenary.nvim'} }
   }
   use 'folke/which-key.nvim'
-  use {'abecodes/tabout.nvim',
-    wants = { { 'nvim-treesitter'}, },
-    after = { { 'nvim-cmp'} },
-  }
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
