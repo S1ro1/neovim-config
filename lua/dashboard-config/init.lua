@@ -1,7 +1,7 @@
 local db = require('dashboard')
 local home = os.getenv("HOME")
-local keymaps = home .. '/.config/nvim/lua/key-maps/init.lua'
-local utils = require('utils')
+local keymaps = require('scripts.keymaps')
+local colorschemes = require('scripts.colorschemes')
 
 db.session_directory = home .. '/.tmp/nvim'
 
@@ -61,7 +61,13 @@ db.custom_center = {
     icon = ' ',
     desc = 'Keymaps                                         ',
     shortcut = '<leader>k',
-    action = 'lua utils.mount()'
+    action = 'lua keymaps.show_keymaps()'
+  },
+  {
+    icon = ' ',
+    desc = 'Change colorscheme                              ',
+    shortcut = '<leader>m',
+    action = 'lua colorschemes.show_menu()'
   }
 }
 

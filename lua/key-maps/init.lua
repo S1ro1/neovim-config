@@ -1,8 +1,8 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-local keymaps = os.getenv("HOME") .. '/.config/nvim/lua/key-maps/init.lua'
 
-utils = require'utils'
+keymaps = require'scripts.keymaps.init'
+colorschemes = require'scripts.colorschemes.init'
 
 vim.g.mapleader = " "
 
@@ -78,5 +78,8 @@ map('i', '<A-a>', '<C-o>a', opts)
 map('n', '<Leader>n', ':enew <CR>', opts)
 
 -- show keymaps
-map('n', '<leader>k', '<cmd>lua utils.show_keymaps()<CR>', opts)
+map('n', '<leader>k', '<cmd>lua keymaps.show_keymaps()<CR>', opts)
+map('n', '<leader>m', '<cmd>lua colorschemes.show_menu()<CR>', opts)
+
+-- map('n', '<leader>m', '<cmd>lua utils.show_menu()<CR>', opts)
 
