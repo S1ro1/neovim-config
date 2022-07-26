@@ -8,7 +8,7 @@ so sometimes each new push will change the colorscheme (how to change it is spec
 
 Currently used theme is gruvbox-baby https://github.com/luisiacc/gruvbox-baby
 
-![nvim_initscreen](https://user-images.githubusercontent.com/54212263/180823281-3628624b-c63f-4078-ad86-d5ab1fc0d847.png)
+![nvim_initscreen](https://user-images.githubusercontent.com/54212263/180897017-d5ba568b-692f-49ca-9e60-566a8e564805.png)
 &nbsp;&nbsp;&nbsp;
 ![nvim_python](https://user-images.githubusercontent.com/54212263/180824085-ebb80b6d-5fa6-4763-9daa-cd09c9aaf4da.png)
 
