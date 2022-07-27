@@ -50,9 +50,7 @@ function keymaps.show_keymaps()
   if keymaps.spawned_keymaps == true then
     keymaps.key_popup:show()
   else
-    for k, v in pairs(keymaps_lines) do
-      vim.api.nvim_buf_set_lines(keymaps.key_popup.bufnr, k - 1, k, false, { v })
-    end
+    vim.api.nvim_buf_set_lines(keymaps.key_popup.bufnr, 0, -1, false, keymaps_lines)
     keymaps.key_popup:mount()
     keymaps.spawned_keymaps = true
   end

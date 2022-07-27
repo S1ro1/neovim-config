@@ -30,43 +30,37 @@ db.custom_center = {
   {
     icon = ' ',
     desc = 'New file                                        ',
-    shortcut = '<leader>n',
+    shortcut = 'SPC fn',
     action ='DashboardNewFile'
   },
   {
-    icon = ' ',
-    desc = 'Find file                                      ',
-    shortcut = '<leader>ff',
+    icon = ' ',
+    desc = 'Find file                                       ',
+    shortcut = 'SPC ff',
     action = 'Telescope find_files'
   },
   {
-    icon = ' ',
-    desc = 'Live grep                                      ',
-    shortcut = '<leader>fg',
+    icon = ' ',
+    desc = 'Live grep                                       ',
+    shortcut = 'SPC fg',
     action = 'Telescope live_grep'
   },
   {
-    icon = 'פּ ',
-    desc = 'File tree                                       ',
-    shortcut = '<leader>t',
-    action = 'NvimTreeOpen'
-  },
-  {
-    icon = ' ',
+    icon = ' ',
     desc = 'Recent session                                  ',
-    shortcut = '<leader>l',
+    shortcut = 'SPC sl',
     action = 'SessionLoad'
   },
   {
-    icon = ' ',
+    icon = ' ',
     desc = 'Keymaps                                         ',
-    shortcut = '<leader>k',
+    shortcut = 'SPC mk',
     action = 'lua keymaps.show_keymaps()'
   },
   {
     icon = ' ',
     desc = 'Change colorscheme                              ',
-    shortcut = '<leader>m',
+    shortcut = 'SPC mc',
     action = 'lua colorschemes.show_menu()'
   }
 }
@@ -82,7 +76,7 @@ local n_plugins = vim.fn.len(
 db.custom_footer = {
   '',
   '',
-  '--   Currently loaded ' .. n_plugins .. ' plugins --',
+  '--   Currently loaded ' .. n_plugins .. ' plugins --    ',
   '',
   '',
   "Software is like sex, it's better when it's free",

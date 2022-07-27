@@ -1,19 +1,18 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
-keymaps = require'scripts.keymaps.init'
-colorschemes = require'scripts.colorschemes.init'
+keymaps = require'scripts.keymaps'
+colorschemes = require'scripts.colorschemes'
 
 vim.g.mapleader = " "
 
 -- toggle neovim tree side panel
-map('n', '<A-e>', ':NvimTreeToggle<CR>', opts)
-map('n', '<leader>t', ':NvimTreeOpen<CR>', opts)
+map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 
 -- copilot related keybinds
 map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-map('n', '<C-d>', ':Copilot disable<CR>', opts)
-map('n', '<C-e>', ':Copilot enable<CR>', opts)
+map('n', '<leader>d', ':Copilot disable<CR>', opts)
+map('n', '<leader>e', ':Copilot enable<CR>', opts)
 
 -- move to buffer
 map('n', '<leader>,', ':BufferPrevious<CR>', opts)
@@ -46,10 +45,10 @@ map('v', '<', "<gv", opts)
 map('v', '>', '>gv', opts)
 
 -- format buffer
-map('n', '<leader>f', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
+map('n', '<leader>fb', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
 -- zen mode?
-map("n", "<leader>m", ":TZAtaraxis<CR>", opts)
+map("n", "<leader>z", ":TZAtaraxis<CR>", opts)
 
 -- resizing of splits
 map('n', '<C-Up>', ':resize -2<CR>', opts)
@@ -65,21 +64,19 @@ map('n', '<C-l>', '<C-w>l', opts)
 map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>fb', ':Telescope buffers<CR>', opts)
-map('n', '<leader>fh', ':Telescope help_tags<CR>', opts)
 
 -- save and load session (currently saving is automated on close)
-map('n', '<leader>l', ':SessionLoad<CR>', opts)
-map('n', '<leader>s', ':SessionSave<CR>', opts)
+map('n', '<leader>sl', ':SessionLoad<CR>', opts)
+map('n', '<leader>ss', ':SessionSave<CR>', opts)
 
 -- mimics tabout behavior
 map('i', '<A-a>', '<C-o>a', opts)
 
 -- open new file
-map('n', '<Leader>n', ':enew <CR>', opts)
+map('n', '<Leader>fn', ':enew <CR>', opts)
 
--- show keymaps
-map('n', '<leader>k', '<cmd>lua keymaps.show_keymaps()<CR>', opts)
-map('n', '<leader>m', '<cmd>lua colorschemes.show_menu()<CR>', opts)
-
--- map('n', '<leader>m', '<cmd>lua utils.show_menu()<CR>', opts)
+-- help menus
+map('n', '<leader>mk', '<cmd>lua keymaps.show_keymaps()<CR>', opts)
+map('n', '<leader>mc', '<cmd>lua colorschemes.show_menu()<CR>', opts)
+map('n', '<leader>mh', ':Telescope help_tags<CR>', opts)
 

@@ -4,6 +4,7 @@ set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 2
 set.tabstop = 2
+set.softtabstop = 2
 
 set.hlsearch = true
 set.incsearch = true
@@ -28,9 +29,11 @@ set.signcolumn = 'yes'
 set.hidden = true
 set.mouse = "a"
 set.scrolloff = 3
+vim.g["python_reccomended_style"] = 0
 
 set.title = true
 set.clipboard = "unnamedplus"
+
 
 set.pumheight = 3
 vim.g.completion_menu_length = 5

@@ -1,6 +1,8 @@
 return require'packer'.startup(function()
   use 'wbthomason/packer.nvim'
 
+  use 'Vimjas/vim-python-pep8-indent'
+
   -- colorschemes i rotate between
   use 'EdenEast/nightfox.nvim'
   use 'tomasiser/vim-code-dark'

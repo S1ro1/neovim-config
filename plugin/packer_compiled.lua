@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/vim-code-dark",
     url = "https://github.com/tomasiser/vim-code-dark"
   },
+  ["vim-python-pep8-indent"] = {
+    loaded = true,
+    path = "/home/siro/.local/share/nvim/site/pack/packer/start/vim-python-pep8-indent",
+    url = "https://github.com/Vimjas/vim-python-pep8-indent"
+  },
   ["vscode.nvim"] = {
     loaded = true,
     path = "/home/siro/.local/share/nvim/site/pack/packer/start/vscode.nvim",
