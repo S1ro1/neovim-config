@@ -10,6 +10,7 @@ return require'packer'.startup(function()
   use 'luisiacc/gruvbox-baby'
   use 'kvrohit/rasmus.nvim'
   use 'mangeshrex/everblush.vim'
+  use { "catppuccin/nvim", as = "catppuccin" }
   -- end of colorschemes
 
   use 'glepnir/dashboard-nvim'
@@ -30,6 +31,7 @@ return require'packer'.startup(function()
   }
   use 'folke/which-key.nvim'
   use 'MunifTanjim/nui.nvim'
+  use 'terryma/vim-multiple-cursors'
 
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'

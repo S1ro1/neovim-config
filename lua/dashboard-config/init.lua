@@ -85,9 +85,15 @@ db.custom_footer = {
 
 }
 
---vim.cmd[[highlight DashboardHeader guifg=#8661ad]]
-vim.cmd[[highlight DashBoardHeader guifg=#EEBD35]]
-vim.cmd[[highlight DashboardShortcut guifg=#E64B2A]]
-vim.cmd[[highlight DashboardCenterIcon guifg=#82811D]]
-vim.cmd[[highlight DashboardCenter guifg=#82811D]]
+vim.cmd[[highlight DashboardHeader guifg=#C6AAE8]]
+vim.cmd[[highlight DashboardCenter guifg=#B3E1A3]]
+vim.cmd[[highlight DashboardCenterIcon guifg=#B3E1A3]]
+vim.cmd[[highlight DashboardShortcut guifg=#E28C8C]]
+vim.cmd[[highlight DashboardFooter guifg=#CACCFF]]
+
+-- gruvbox themee
+-- vim.cmd[[highlight DashBoardHeader guifg=#EEBD35]]
+-- vim.cmd[[highlight DashboardShortcut guifg=#E64B2A]]
+-- vim.cmd[[highlight DashboardCenterIcon guifg=#82811D]]
+-- vim.cmd[[highlight DashboardCenter guifg=#82811D]]
 

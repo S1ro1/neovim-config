@@ -2,7 +2,7 @@ require('settings')
 require('packer-config')
 -- to change colorscheme, just change suffix to any other folder in colorschemes-config
 -- lualine theme is set to auto, so no need to change that unless wanted
-require('colorschemes-config.gruv')
+require('colorschemes-config.cat')
 require('key-maps')
 require('nvim-tree-config')
 require('lsp-config.language-servers')

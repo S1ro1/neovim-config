@@ -34,7 +34,6 @@ vim.g["python_reccomended_style"] = 0
 set.title = true
 set.clipboard = "unnamedplus"
 
-
 set.pumheight = 3
 vim.g.completion_menu_length = 5
 

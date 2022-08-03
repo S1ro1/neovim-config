@@ -1,5 +1,5 @@
 ## A minimalistic neovim configuration
-
+       
 Requires neovim 0.7+ and some type of NerdFont installed <br>
 Since i use this to move my configs between computers, i cycle between color themes quite often, <br>
 so sometimes each new push will change the colorscheme (how to change it is specified in init.lua)
