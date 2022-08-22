@@ -41,7 +41,10 @@ keymaps.key_popup = keymaps.Popup({
 	buf_options = {
 		filetype = "lua",
     modifiable = false,
-	}, 
+	},
+  win_options = {
+    winhighlight = "FloatBorder:FloatBorder"
+  }
 })
 local keymaps_lines = lines_from(keymaps_file)
 

@@ -11,7 +11,7 @@ map('n', '<leader>t', ':NvimTreeToggle<CR>', opts)
 
 -- copilot related keybinds
 map("i", "<C-j>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-map('n', '<leader>d', ':Copilot disable<CR>', opts)
+map('n', '<leader>x', ':Copilot disable<CR>', opts)
 map('n', '<leader>e', ':Copilot enable<CR>', opts)
 
 -- move to buffer
@@ -47,9 +47,6 @@ map('v', '>', '>gv', opts)
 -- format buffer
 map('n', '<leader>fb', ':lua vim.lsp.buf.formatting_sync()<CR>', opts)
 
--- zen mode?
-map("n", "<leader>z", ":TZAtaraxis<CR>", opts)
-
 -- resizing of splits
 map('n', '<C-Up>', ':resize -2<CR>', opts)
 map('n', '<C-Down>', ':resize +2<CR>', opts)
@@ -79,4 +76,12 @@ map('n', '<Leader>fn', ':enew <CR>', opts)
 map('n', '<leader>mk', '<cmd>lua keymaps.show_keymaps()<CR>', opts)
 map('n', '<leader>mc', '<cmd>lua colorschemes.show_menu()<CR>', opts)
 map('n', '<leader>mh', ':Telescope help_tags<CR>', opts)
+
+-- diagnostics
+map('n', '<leader>dd', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
+map('n', '<leader>dl', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
+map('n', '<leader>dh', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
+
+-- git
+map('n', '<leader>gg', '<cmd>LazyGit<CR>', opts)
 

@@ -79,9 +79,10 @@ db.custom_footer = {
   '--   Currently loaded ' .. n_plugins .. ' plugins --    ',
   '',
   '',
-  "Software is like sex, it's better when it's free",
+  'Fuck Java',
+  --"Software is like sex, it's better when it's free",
   '',
-  ' - Linus Torvalds                            ',
+  ' - Linus Torvalds, probably                            ',
 
 }
 

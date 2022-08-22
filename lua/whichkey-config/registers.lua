@@ -31,14 +31,29 @@ wk.register({
 }, {prefix = "<leader>"})
 
 wk.register({
+  d = {
+    name = "diagnostics",
+    d = { "<cmd>lua vim.diagnostic.open_float()<cr>", "open diagnostics"},
+    l = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "goto next"},
+    h = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "goto previous"},
+  }
+}, {prefix = "<leader>"})
+
+wk.register({
+  g = {
+    name = "git",
+    g = { "<cmd>LazyGit<cr>", "open lazy git"},
+  }
+}, {prefix = "<leader>"})
+
+wk.register({
   [","]  = { "previous buffer"},
   ["."] = { "next buffer" },
   ["c"] = { "close buffer" },
   ["p"] = { "pick buffer" },
   ["t"] = { "toggle file tree" },
-  ["z"] = { "toggle zen mode" },
   ["e"] = { "enable github copilot" },
-  ["d"] = { "disable github copilot" },
+  ["x"] = { "disable github copilot" },
 }, {prefix = "<leader>"})
 
 wk.register({
@@ -54,3 +69,5 @@ wk.register({
   ["9"] = { "which_key_ignore" },
   ["q"] = { "which_key_ignore" },
 }, {prefix = "<leader>"})
+
+

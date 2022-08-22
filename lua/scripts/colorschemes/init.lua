@@ -35,7 +35,7 @@ function utils.show_menu()
       }
     },
     win_options = {
-      winhighlight = "Normal:Normal,FloatBorder:Normal",
+      winhighlight = "Normal:Normal,FloatBorder:FloatBorder",
     },
     buf_options = {
       modifiable = false,

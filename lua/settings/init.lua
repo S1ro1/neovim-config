@@ -20,6 +20,7 @@ set.fileencoding = 'utf-8'
 set.termguicolors = true
 set.completeopt = "menuone,noselect"
 set.wildmenu = true
+set.swapfile = false
 
 set.relativenumber = true
 set.number = true
@@ -39,7 +40,7 @@ vim.g.completion_menu_length = 5
 
 vim.api.nvim_exec([[ autocmd VimLeavePre * :SessionSave ]], false)
 
-
+vim.g.lazygit_floating_window_winblend = 20
 -- settings to make neovim use transparent background
 -- was used with transparent terminal 
 -- Vim.cmd[[highlight Normal           ctermbg:=NONE guibg=NONE]]
